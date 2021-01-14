@@ -1,6 +1,8 @@
 var makeBreakDancer = function(top, left, timeBetweenSteps) {
 
   makeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<span class="break"></span>');
+
 
 };
 
@@ -10,5 +12,5 @@ makeBreakDancer.prototype.constructor = makeBreakDancer;
 
 makeBreakDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);
-  this.$node.toggle('break');
+  //this.$node.toggle();
 };

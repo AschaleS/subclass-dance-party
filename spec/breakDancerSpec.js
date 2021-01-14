@@ -15,7 +15,7 @@ describe('breakDancer', function() {
   it('should have a step function that makes its node blink', function() {
     sinon.spy(breakDancer.$node, 'toggle');
     breakDancer.step();
-    expect(breakDancer.$node.toggle.called).to.be.true;
+    expect(breakDancer.$node.toggleClass.called).to.be.true;
   });
 
   describe('dance', function() {
