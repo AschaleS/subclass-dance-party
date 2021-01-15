@@ -24,3 +24,7 @@ makeDancer.prototype.step = function(timeBetweenSteps) {
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
+// makeDancer.prototype.lineUp = function() {
+
+// };
+
