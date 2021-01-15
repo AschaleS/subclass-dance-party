@@ -1,8 +1,7 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
 
   makeDancer.call(this, top, left, timeBetweenSteps);
-  // this.$node.css({"border-color": "blue"});
-
+  this.$node.removeClass('dancer').addClass('blinkyDancer');
 
 };
 
