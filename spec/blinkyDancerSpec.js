@@ -12,11 +12,17 @@ describe('blinkyDancer', function() {
     expect(blinkyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
+  it('should have a classname called blinkyDancer', function() {
+    expect(blinkyDancer.$node.hasClass('blinkyDancer')).to.be.equal(true);
+  });
+
+
   it('should have a step function that makes its node blink', function() {
     sinon.spy(blinkyDancer.$node, 'toggle');
     blinkyDancer.step();
     expect(blinkyDancer.$node.toggle.called).to.be.true;
   });
+
 
   describe('dance', function() {
     it('should call step at least once per second', function() {

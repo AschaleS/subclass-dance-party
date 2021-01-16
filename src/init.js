@@ -22,7 +22,7 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $('body').height() * Math.random( $('body').height() / 2),
+      $('body').height() * Math.random( /*$('body').height() / 2*/),
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
@@ -36,14 +36,6 @@ $(document).ready(function() {
       $(this).css("background-color", '');
     });
   });
-
-
-
-
-  // $("span").mouseover()(function() {
-  //   // $('.mouse').css("color", "blue")
-  //   console.log('yes');
-  // });
 
 
   $('.lineUpButton').on('click', function(event) {
@@ -82,5 +74,4 @@ $(document).ready(function() {
     dancer1.$node.addClass('sync');
     dancer2.$node.addClass('sync');
   });
-
 });

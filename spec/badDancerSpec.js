@@ -12,6 +12,10 @@ describe('badDancer', function() {
     expect(badDancer.$node).to.be.an.instanceof(jQuery);
   });
 
+  it('should have a classname called badDancer', function() {
+    //breakDancer.$node.addClass('break');
+    expect(badDancer.$node.hasClass('badDancer')).to.be.equal(true);
+  });
   // it('should have a step function that makes its node blink', function() {
   //   sinon.spy(badDancer.$node, 'toggle');
   //   badDancer.step();
