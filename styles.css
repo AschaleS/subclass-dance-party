@@ -75,6 +75,7 @@ to {top: 25%}
   background-color: black;
   /* transition: width 2s; */
   animation: badMoves 2s infinite;
+  size: 1000px;
 }
 
 

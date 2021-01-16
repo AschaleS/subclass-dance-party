@@ -28,15 +28,22 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
+
+    $("span").mouseover(function() {
+      $(this).css("border-color", "blue");
+    });
+    $("span").mouseout(function() {
+      $(this).css("border-color", '');
+    });
   });
 
 
 
 
-  $("span").mouseover(function() {
-    // $('.mouse').css("background-color", "blue")
-    console.log('yes');
-  });
+  // $("span").mouseover()(function() {
+  //   // $('.mouse').css("color", "blue")
+  //   console.log('yes');
+  // });
 
 
   $('.lineUpButton').on('click', function(event) {
