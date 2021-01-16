@@ -12,7 +12,4 @@ makeBadDancer.prototype.constructor = makeBadDancer;
 
 makeBadDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);
-
-  // this.$node = $('<span class="badDancer"></span>');
-  //this.$node.toggle();
 };

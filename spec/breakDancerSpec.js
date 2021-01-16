@@ -13,25 +13,8 @@ describe('breakDancer', function() {
   });
 
   it('should have a classname called break', function() {
-    //breakDancer.$node.addClass('break');
     expect(breakDancer.$node.hasClass('break')).to.be.equal(true);
   });
-
-  // // it('should have a classname called image', function() {
-  // //   expect($('.topbar').hasClass('lineUpButton')).to.equal(true);
-  // // });
-
-  // // it('should have a button that puls the dancers in line', function() {
-  // //   // sinon.spy(breakDancer.$node, 'toggle');
-  // //   //lineUpButtonbreakDancer.step();
-  // //   $(".lineUpButton").trigger("click");
-  // //   expect('click').toHaveBeenTriggeredOn('.lineUpButton');
-  // //   // expect($(document.body)'lineUpButton').clicked).to.be.true;
-  // it('should have a button that puts the dancers in line', function() {
-  //   sinon.spy($(), 'setPosition(top, left)');
-  //   $(".lineUpButton").trigger("click");
-  //    expect(setPosition(top, left)).to.have.been.called;
-  // });
 
   describe('dance', function() {
     it('should call step at least once per half second', function() {

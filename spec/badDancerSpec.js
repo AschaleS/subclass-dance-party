@@ -13,14 +13,8 @@ describe('badDancer', function() {
   });
 
   it('should have a classname called badDancer', function() {
-    //breakDancer.$node.addClass('break');
     expect(badDancer.$node.hasClass('badDancer')).to.be.equal(true);
   });
-  // it('should have a step function that makes its node blink', function() {
-  //   sinon.spy(badDancer.$node, 'toggle');
-  //   badDancer.step();
-  //   expect(badDancer.$node.toggle.called).to.be.true;
-  // });
 
   describe('dance', function() {
     it('should call step at least once per half second', function() {
