@@ -1,7 +1,7 @@
 var makeBadDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
 
-  this.$node.removeClass('dancer').addClass('badDancer');
+  this.$node.removeClass('dancer').addClass('badDancer').addClass('mouse');
 };
 
 makeBadDancer.prototype = Object.create(makeDancer.prototype);

@@ -1,7 +1,7 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
 
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node.removeClass('dancer').addClass('blinkyDancer');
+  this.$node.removeClass('dancer').addClass('blinkyDancer').addClass('mouse');
 
 };
 

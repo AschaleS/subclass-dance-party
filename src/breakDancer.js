@@ -2,7 +2,7 @@ var makeBreakDancer = function(top, left, timeBetweenSteps) {
 
   makeDancer.call(this, top, left, timeBetweenSteps);
   // this.$node = $('<span class="break"></span>');
-  this.$node.removeClass('dancer').addClass('break');
+  this.$node.removeClass('dancer').addClass('break').addClass('mouse');
 
 };
 

@@ -72,6 +72,7 @@ to {top: 25%}
   position:absolute;
   width: 20px;
   height: 40px;
+  background-color: black;
   /* transition: width 2s; */
   animation: badMoves 2s infinite;
 }
