@@ -24,8 +24,8 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 @keyframes breakMove {
-from {left: 0;}
-to {right: 20;}
+from {bottom: 50%}
+to {top: 25%}
 }
 
 @keyframes badMoves {
@@ -41,6 +41,8 @@ to {right: 20;}
     transform: scale(1);
   }
 }
+
+
 
 .dancer, .bulge, .blinkyDancer{
   border:10px solid red;
@@ -79,4 +81,12 @@ to {right: 20;}
   border:30px solid red;
   border-radius: 30%;
   position:absolute;
+}
+
+.sync{
+  /* border:30px solid yellow;
+  border-radius: 5px;
+  position:absolute; */
+  animation: breakMove 1s infinite;
+  animation-direction: alternate;
 }

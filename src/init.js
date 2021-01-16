@@ -38,5 +38,46 @@ $('.lineUpButton').on('click', function(event) {
     window.dancers[i].setPosition(top, left);
     left += 100;
   }
-  $('body').append(dancer.$node);
+  // $('body').append(dancer.$node);
+});
+
+// iterate through the window.dancer array
+
+// check the left and top value of the current dancer
+
+//check the left and top value of the next dancer within the array
+
+// callculate the distance between the current dancer and the next danacer
+
+
+
+$('.interact').on ('click', function(event) {
+  // $this = $(this);
+  // console.log($(this));
+  var minDistance = 1000;
+  var dancer1, dancer2;
+
+  for(var i = 0; i < window.dancers.length; i++){
+    var currentDancer = window.dancers[i];
+    // for(var k = 1; k < window.dancers.length; k++) {
+    if(i + 1 === window.dancers.length){
+      break;
+    }
+    var nextDancer = window.dancers[i + 1];
+    var distanceB = Math.abs((currentDancer.top - nextDancer.top) ^ 2);
+    var distanceA = Math.abs((currentDancer.left - nextDancer.left) ^ 2);
+    var totalDistance = distanceA + distanceB;
+    if(minDistance > totalDistance) {
+      minDistance = totalDistance;
+      dancer1 = currentDancer;
+      dancer2 = nextDancer;
+      console.log(dancer1, dancer2, minDistance);
+    }
+  }
+  var top = $('body').height() / 2;
+  var left = $('body').width()/ 2;
+  dancer1.setPosition(top, left - 50);
+  dancer2.setPosition(top, left + 50);
+  dancer1.$node.addClass('sync');
+  dancer2.$node.addClass('sync');
 });
