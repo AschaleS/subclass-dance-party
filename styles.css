@@ -25,7 +25,7 @@ body, a:link, a:visited, a:active{
 }
 @keyframes breakMove {
 from {bottom: 50%}
-to {top: 25%}
+to {top: 50%}
 }
 
 @keyframes badMoves {
@@ -45,7 +45,7 @@ to {top: 25%}
 
 
 .dancer, .bulge, .blinkyDancer{
-  border:10px solid red;
+  /* border:10px solid red; */
   border-radius:10px;
   position:absolute;
 }
@@ -56,11 +56,14 @@ to {top: 25%}
   height: 50px;
   border-radius: 50%;
   position:absolute; */
-  border:20px solid rgb(255, 255, 255);
-  border-radius:20px;
+  /* border:20px solid rgb(255, 255, 255);
+  border-radius:20px; */
   /* position:absolute; */
+  /* image: url("https://www.jing.fm/clipimg/full/293-2937455_silhouette-of-person-jumping-png.png");
+   */
+  /* border: 5px; */
   position: absolute;
-  animation: breakMove 1s infinite;
+  animation: badMoves .5s infinite;
   animation-direction: alternate;
 
 }
@@ -68,19 +71,18 @@ to {top: 25%}
 
 
 .badDancer{
-  border: 5px dashed rgb(94, 255, 0);
+  border: 0px;
   position:absolute;
   width: 20px;
   height: 40px;
-  background-color: black;
+  /* background-color: black; */
   /* transition: width 2s; */
   animation: badMoves 2s infinite;
-  size: 1000px;
 }
 
 
 .blinkyDancer{
-  border:30px solid red;
+  /* border:30px solid red; */
   border-radius: 30%;
   position:absolute;
 }
@@ -91,4 +93,11 @@ to {top: 25%}
   position:absolute; */
   animation: breakMove 1s infinite;
   animation-direction: alternate;
+}
+
+.image{
+  width: 50px;
+  height: 50px;
+  /* border: 5px solid green; */
+  /* border-color: red; */
 }

@@ -22,7 +22,7 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $('body').height() * Math.random(),
+      $('body').height() * Math.random( $('body').height() / 2),
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
@@ -30,10 +30,10 @@ $(document).ready(function() {
     window.dancers.push(dancer);
 
     $("span").mouseover(function() {
-      $(this).css("border-color", "blue");
+      $(this).css("background-color", "yellow");
     });
     $("span").mouseout(function() {
-      $(this).css("border-color", '');
+      $(this).css("background-color", '');
     });
   });
 

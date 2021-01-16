@@ -14,7 +14,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
 makeDancer.prototype.setPosition = function(top, left) {
   var styleSettings = {
-    top: top,
+    top:  Math.floor(Math.random() * (700 - 400 + 1) + 400),
     left: left
   };
   this.$node.css(styleSettings);
